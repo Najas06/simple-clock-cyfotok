@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://cdn.pixabay.com/photo/2022/09/21/17/02/blue-background-7470781_1280.jpg');
+    background-size: cover;
+}
+
+.clock{
+    padding: 10px;
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.clock span{
+    font-size: 120px;
+    font-weight: 700;
+}
+
+#hrs::after{
+    content: "HOURS";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+#min::after{
+    content: "MINUTES";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+#sec::after{
+    content: "SECONDS";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
